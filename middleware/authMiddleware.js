@@ -2,7 +2,7 @@ require("dotenv").config();
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 
-const jwtSecret = process.env.JWT_SECRET;
+const jwtSecret = "AliAwanIsMyName";
 
 const requireAuth = (req, res, next) => {
   const token = req.cookies.jwt;
